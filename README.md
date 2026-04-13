@@ -17,14 +17,14 @@ A collection of AI skills for developers, focused on quick fixes and productivit
 Clone the repository:
 
 ```bash
-git clone https://github.com/dafi/skills-first-aid.git ~/projects
+git clone https://github.com/dafi/skills-first-aid.git
 ```
 
 Then create the symlinks:
 
 ```bash
-cd ~/projects
-ln -s skills-first-aid/skills/* ~/.codex/skills
+cd skills-first-aid
+ln -sfn $PWD/skills/* ~/.codex/skills
 ```
 
 #### Installation with `skill-installer`
