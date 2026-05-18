@@ -19,8 +19,9 @@ Treat `gbug` as a direct request for a bug report and `gfeat` as a direct reques
 2. Infer whether the user wants a bug report or a feature request
 3. Extract the relevant behavior, intent, and impact from the modified files and diff
 4. Ask concise follow-up questions only when a required section cannot be supported from the available evidence
-5. Produce the final Markdown in the correct issue format
-6. Copy the exact final Markdown to the clipboard with `pbcopy`
+5. Produce text very short and incisive
+6. Produce the final Markdown in the correct issue format
+7. Copy the exact final Markdown to the clipboard with `pbcopy`
 
 ## Gather Context
 
