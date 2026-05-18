@@ -25,7 +25,7 @@ Keep the workflow interactive and deterministic. Ask for decisions only in this 
 5. Ask the user to choose the `scope`
 6. Produce at most 3 final commit-message alternatives
 7. Ask the user to choose one
-8. Copy the selected message to the clipboard with `pbcopy`
+8. Copy the selected message to the clipboard with `scripts/copy-text.sh`
 
 ## Type Selection
 
@@ -87,7 +87,7 @@ Format alternatives exactly as a numbered list of full conventional-commit messa
 
 ## Clipboard
 
-After the user picks one alternative, copy the exact selected message to the clipboard using `pbcopy`.
+After the user picks one alternative, copy the exact selected message to the clipboard using `scripts/copy-text.sh`.
 
 Confirm which message was copied.
 
