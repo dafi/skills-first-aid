@@ -10,6 +10,24 @@ A collection of AI skills for developers, focused on quick fixes and productivit
 
 ## Installation
 
+### Claude Code
+
+#### Local Repository Installation (Recommended)
+
+Clone the repository:
+
+```bash
+git clone https://github.com/dafi/skills-first-aid.git
+```
+
+Then create the symlinks:
+
+```bash
+cd skills-first-aid
+ln -sfn $PWD/skills/* ~/.claude/skills
+```
+
+
 ### Codex
 
 #### Local Repository Installation (Recommended)
