@@ -61,8 +61,8 @@ Steps to reproduce
 Write each section from the strongest evidence available
 
 - `Title`: make it short, specific, and behavior-oriented
-- `What happens?`: describe the current observed behavior clearly and concretely
-- `What did you expect to happen?`: describe the correct or intended behavior
+- `What happens?`: 1 to 3 sentences maximum, describing only the observed, user-facing behavior. Do not describe the underlying code, the fix, or how the bug happens internally — only what a user or reader would notice. Push any technical explanation (function names, variables, code paths, stack traces) out of this section; it only belongs here if the issue is unreadable without it
+- `What did you expect to happen?`: describe the correct or intended behavior, in the same user-facing, non-technical terms as `What happens?`
 - `Steps to reproduce`: list the shortest reliable sequence that reproduces the problem
 
 Ask follow-up questions only when the reproduction path or expected behavior cannot be inferred safely from the diff, file names, or prompt
@@ -84,7 +84,7 @@ Why is this useful?
 Write each section from the strongest evidence available
 
 - `Title`: make it short, specific, and outcome-oriented
-- `Feature description`: explain what should be added or changed
+- `Feature description`: explain what should be added or changed, in plain, outcome-oriented terms. Avoid implementation details (specific functions, libraries, architecture) unless the request cannot be understood without them
 - `Why is this useful?`: explain the problem solved, friction removed, or benefit created
 
 Ask follow-up questions only when the user value, audience, or problem statement cannot be inferred safely from the diff and prompt
@@ -96,7 +96,9 @@ Do not fabricate business rationale, user pain, or workflow details that are not
 - write in English
 - produce GitHub-ready Markdown
 - keep the wording direct and specific
-- prefer concrete behavior over implementation jargon
+- prefer concrete, user-facing behavior over implementation jargon
+- avoid technical details (code, file names, function/variable names, internal error messages, stack traces) unless the issue cannot be understood or reproduced without them
+- when a technical detail is strictly necessary, keep it to the minimum needed and isolate it rather than weaving it through the whole description
 - mention only details that are relevant to the issue
 - avoid hedging when the evidence is clear
 - avoid claiming certainty when the evidence is incomplete
