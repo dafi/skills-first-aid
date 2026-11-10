@@ -1,0 +1,49 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "skills-first-aid",
+  "owner": {
+    "name": "Davide Ficano"
+  },
+  "metadata": {
+    "description": "A collection of AI skills for developers, focused on quick fixes and productivity improvements.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "conventional-commit-generator",
+      "description": "Generate proper Conventional Commit messages.",
+      "source": "./",
+      "strict": false,
+      "category": "development",
+      "keywords": ["git", "commit", "conventional-commits"],
+      "skills": ["./skills/dafi-conventional-commit-generator"]
+    },
+    {
+      "name": "github-issue-creator",
+      "description": "Create GitHub issues in a clean, consistent format.",
+      "source": "./",
+      "strict": false,
+      "category": "development",
+      "keywords": ["github", "issue", "bug-report"],
+      "skills": ["./skills/dafi-github-issue-creator"]
+    },
+    {
+      "name": "english-translator-proofreader",
+      "description": "Translate and proofread technical English.",
+      "source": "./",
+      "strict": false,
+      "category": "productivity",
+      "keywords": ["english", "translation", "proofreading"],
+      "skills": ["./skills/dafi-english-translator-proofreader"]
+    },
+    {
+      "name": "opendoc",
+      "description": "Generate or update OpenAPI documentation for changed REST resources.",
+      "source": "./",
+      "strict": false,
+      "category": "development",
+      "keywords": ["openapi", "rest", "documentation"],
+      "skills": ["./skills/dafi-opendoc"]
+    }
+  ]
+}
